@@ -1,0 +1,20 @@
+spring:
+
+  profiles:
+    include: privateinfo
+    #dev与prod应当谨慎切换
+    active: dev
+select-course:
+  select-course-interface: https://jw.zcst.edu.cn/xsxk/zzxkyzbjk_xkBcZyZzxkYzb.html
+  login-interface: https://jw.zcst.edu.cn/xtgl/login_slogin.html
+  login-page-interface: https://jw.zcst.edu.cn/xtgl/login_slogin.html
+  login-menu-interface: https://jw.zcst.edu.cn/xtgl/index_initMenu.html
+  info-interfaces:
+    #学号需要改
+    - https://jw.zcst.edu.cn/xtgl/index_cxAreaOne.html?localeKey=zh_CN&gnmkdm=index&su=
+  courseo-optional-list-interface: "https://jw.zcst.edu.cn/xsxk/zzxkyzb_cxZzxkYzbIndex.html"
+  other-data:
+    - "N253512"
+    - "gnmkdm"
+  cron-expression: "*/5 * * * * ?"
+
